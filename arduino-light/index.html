@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="border.css">
+</head>
+<body>
+	
+<link rel="stylesheet" href="styles/arduino-light.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+
+
+<script>
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
+</script>
+<pre>
+<code id="border" class="javascript">  request.get(
+   "https://broker-api.alpaca.markets/v1/jurnals",
+   auth=(api_key,api_secret),
+   json={
+     "to_account":customer_account_id,
+     "from_account":reward_account_id,
+     "entry_type":"JNLC",
+     "amount":10
+   })
+</code>
+</pre>
+</body>
+</html>
